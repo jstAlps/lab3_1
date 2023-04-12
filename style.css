@@ -2,17 +2,19 @@
     box-sizing: border-box;
     margin: 0;
 }
-h1{
+
+h1 {
     margin-bottom: 20px;
 }
+
 body {
     background-image: linear-gradient(to left, #b19ade, #3d416d);
-    font-family: cursive;
+    font-family: 'Trebuchet MS';
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(0,0,0,.5);
@@ -21,6 +23,7 @@ body {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 form {
@@ -29,7 +32,7 @@ form {
 }
 
 input[type="text"] {
-    margin-right:15px;
+    margin-right: 15px;
     flex: 1;
     padding: 10px;
     font-size: 16px;
@@ -61,22 +64,33 @@ li {
     margin-bottom: 10px;
     background-color: cornflowerblue;
     border-radius: 14px;
+
 }
 
 .done {
     background-color: darkgray;
     color: #155724;
 }
-.done p{
+
+.done p {
     text-decoration: line-through;
 }
 
 li .delete-button {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: none;
-    border-radius: 14px;
-    background-color: #dc3545;
-    color: white;
-    cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
 }
+
+li .delete-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Scale the image to fit inside the button */
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
